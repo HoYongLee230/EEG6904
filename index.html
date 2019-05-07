@@ -25,8 +25,75 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Fourier Analysis of Absolute Humidity
+						
+						## HO YONG LEE
+						## EE G6904
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## What is Relative Humidity?
+						
+						* Relative humidity measures the amount of water vapor present, but relative to the air temperature.
+						* Usually defined as a percentage of the water vapor pressure over the saturation water vapor pressure.
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## What is Absolute Humidity?
+							
+						* Absolute Humidity is the amount of water vapor present per volume, usually measured in g/m^3, independent of the air temperature.
+						* Compared to relative humidity, which indicates how much water vapor there is compared to how much water vapor there can be at saturation, absolute humidity just indicates how much water vapor there is.
+					</textarea>
+				</section>
+				<section>
+					<section>
+						<h3>Formulas</h3>
+						<img src = 'images/f1.jpg'>
+					    </br>
+						<img src = 'images/f2.jpg'>
+					</section>
+					<section>
+						<img src = 'images/f3.jpg'>
+					    </br>
+						<img src = 'images/f4.jpg'>
+					</section>
+					<section>
+						<h3>Absolute Humidity Formula</h3>
+						<img src = 'images/f5.jpg'>
+						<div>Formula to calculate Absolute Humidity in terms of air temperature and relative humidity</div>
+						<div>C, m, Tn, A are all constants</div>
+						<div>T = air temperature</div>
+					</section>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Data Parameters
+								
+						* Timeframe of last 64 months from January 2014 to April 2019.
+						* Data taken from five stations located at NYC, Miami, Memphis, Denver, San Francisco
+						* Data taken from Climatological Data from Local Stations.
+						* Source: https://www.ncdc.noaa.gov/cdo-web/datasets 
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Main Objectives
+									
+						* To see if absolute humidity can be shown to have cyclic properties using Fourier Analysis
+						* If location has any effect on the how absolute humidity can vary if it does vary cyclically
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## References
+										
+						* https://www.vaisala.com/sites/default/files/documents/Humidity_Conversion_Formulas_B210973EN-F.pdf
+					</textarea>
+				</section>
 			</div>
 		</div>
 
@@ -37,6 +104,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				slideNumber: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
